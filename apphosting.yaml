@@ -1,0 +1,16 @@
+
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Optimal for Next.js SSR with AI capabilities
+  maxInstances: 5
+  minInstances: 0
+  memory: 1Gi
+  cpu: 1
+
+env:
+  - name: NODE_ENV
+    value: production
+  - name: GEMINI_API_KEY
+    secret: GEMINI_API_KEY
